@@ -16,14 +16,13 @@ export default function DashboardRoute() {
         <>
             <Navbar />
             <Switch>
-                {/* <Route path="/character/:heroId" component={ CharacterPage } /> */}
                 <Route path="/stories" component={ StoriesPage } />
                 <Route path="/mywork" component={ WorkPage } />
                 <Route path="/perfile" component={ PerfilePage } />
                 <Route path="/home" component={ HomePage } />
                 <Route path="/404" component={ HomePage } />
 
-                <Redirect to="/404" />
+                <Redirect to="/home" />
             </Switch>
         </>
     )

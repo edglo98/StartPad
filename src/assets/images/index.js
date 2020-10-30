@@ -1,9 +1,9 @@
-import mainBackground from "./portal.png"
 import pickleRick from "./rickPepinillo.png"
+import DefaultPerfile from "./DefaultPerfile.jpg"
 
 const images = {
-    mainBackground,
-    pickleRick
+    pickleRick,
+    DefaultPerfile
 }
 
 export default images

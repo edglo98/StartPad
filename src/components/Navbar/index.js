@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./styles.css"
 import HamburguerMenu from '../HamburguerMenu'
+import PerfileImage from '../PerfileImage'
+import images from '../../assets/images'
 
 export default function Navbar() {
 
@@ -22,17 +24,17 @@ export default function Navbar() {
 
             <ul  className={`navbar-menu ${menu || "navbar-menu__close"}`}>
                 <li className="navbar-menu__link">
-                    <NavLink to="/location">Explorar</NavLink>
+                    <NavLink to="/stories">Explorar</NavLink>
                 </li>
                 <li className="navbar-menu__link">
-                    <NavLink to="/episode">Mis historias</NavLink>
+                    <NavLink to="/mywork">Mis historias</NavLink>
                 </li>
             </ul>
 
             <Link to="/perfile" className="navbar-menu_perfile" >
-                <span >
-                    img
-                </span>
+                <PerfileImage
+                    img={ images.DefaultPerfile }
+                />
             </Link>
 
         </nav>
