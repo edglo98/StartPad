@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function saludo( { nombre } ) {
+export default function WorkPage() {
     return (
         <div>
-            hola { nombre }
+            work page
         </div>
     )
 }
