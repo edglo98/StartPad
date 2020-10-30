@@ -22,13 +22,13 @@ export default function Navbar() {
                 <span>Start Pad</span>
             </Link>
 
-            <ul  className={`navbar-menu ${menu || "navbar-menu__close"}`}>
-                <li className="navbar-menu__link">
-                    <NavLink to="/stories">Explorar</NavLink>
-                </li>
-                <li className="navbar-menu__link">
-                    <NavLink to="/mywork">Mis historias</NavLink>
-                </li>
+            <ul className={`navbar-menu ${menu || "navbar-menu__close"}`}>
+                <NavLink to="/stories" className="navbar-menu__link">
+                    Explorar
+                </NavLink>
+                <NavLink to="/mywork" className="navbar-menu__link">
+                    Mis historias
+                </NavLink>
             </ul>
 
             <Link to="/perfile" className="navbar-menu_perfile" >

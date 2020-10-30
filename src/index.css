@@ -1,11 +1,11 @@
 :root {
   /* colores extraidos a partir de una imagen con adobe color */
-  --dark: #40250D;
-  --main:  #8C5B30;
-  --light: #D9B68B;
-  --black: #040d08cc;
-  --grey: #BFBFBD;
+  --main: #DFA359;
+  --light: #DFC359;
+  --secondary: #C53B33;
+  --primary: #265D7D;
   --white: #F2F2F0;
+  --black: #2a2a2a;
 }
 
 body {
@@ -24,6 +24,11 @@ code {
 
 a{
   text-decoration: none;
+}
+hr{
+  border: none;
+  background-color: var(--black);
+  height: 1px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -80,7 +85,6 @@ h1 {
 
 hr {
   box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
 

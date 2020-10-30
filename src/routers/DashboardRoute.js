@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Navbar from "../components/Navbar"
 import HomePage from "../pages/HomePage"
-import PerfilePage from '../pages/perfilePage';
+import PerfilePage from '../pages/PerfilePage';
 import WorkPage from '../pages/WorkPage'
 import StoriesPage from '../pages/StoriesPage'
 

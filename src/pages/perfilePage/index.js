@@ -3,11 +3,12 @@ import "./styles.css"
 
 function PerfilePage() {
     return (
-        <div>
-            perfile page
-        </div>
+        <>
+            <div className="background-perfile">
+                perfile page
+            </div>
+        </>
     )
 }
 
 export default PerfilePage
-

@@ -1,3 +1,37 @@
+.login-card{
+    width: 80%;
+    height: 420px;
+    max-width: 400px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 10px 10px 40px #FFCD8F;
+    background-color: #DFA359;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.input-text{
+    border-radius: 10px;
+    height: 25px;
+    margin: 5px 0px 17px 0px;
+    padding: 0px 10px;
+    border: 1px solid var(--primary);
+}
+.login-title{
+    text-align: center;
+}
+.login-subtitle{
+    text-align: center;
+}
+
+
 .btn{
     background-color: transparent;
     padding: 5px 15px;
@@ -8,9 +42,9 @@
 }
 
 .btn-primary{
-    background-color: rgb(116, 170, 240);
+    background-color: var(--primary);
     color: white
 }
 .btn-primary:hover{
-    background-color: rgb(32, 123, 241);
+    background-color: #154866;
 }

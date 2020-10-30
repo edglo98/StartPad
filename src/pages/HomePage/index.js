@@ -1,4 +1,5 @@
 import React from 'react'
+import LastStories from '../../components/LastStories'
 import Loading from '../../components/Loading'
 
 function HomePage() {
@@ -10,15 +11,16 @@ function HomePage() {
     // const {data, loading} = useFetch(`https://rickandmortyapi.com/api/character/${ number }`)
 
     return (
-        <div style={{width: "100%", height: "75vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div style={{width: "100%", height: "100%"}}>
             {
-            true?
+            false?
                 <Loading />
             :
                 <div>
                     contenido
                 </div>
             }
+            <LastStories/>
 
         </div>
     )
