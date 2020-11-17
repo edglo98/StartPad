@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 import "./styles.css"
 import HamburguerMenu from '../HamburguerMenu'
 import PerfileImage from '../PerfileImage'
-import images from '../../assets/images'
 
 export default function Navbar() {
 
@@ -23,18 +22,16 @@ export default function Navbar() {
             </Link>
 
             <ul className={`navbar-menu ${menu || "navbar-menu__close"}`}>
-                <NavLink to="/stories" className="navbar-menu__link">
+                <NavLink to="/stories" className="navbar-menu__link" activeClassName="navbar-menu_active">
                     Explorar
                 </NavLink>
-                <NavLink to="/mywork" className="navbar-menu__link">
+                <NavLink to="/mywork" className="navbar-menu__link" activeClassName="navbar-menu_active">
                     Mis historias
                 </NavLink>
             </ul>
 
             <Link to="/perfile" className="navbar-menu_perfile" >
-                <PerfileImage
-                    img={ images.DefaultPerfile }
-                />
+                <PerfileImage />
             </Link>
 
         </nav>

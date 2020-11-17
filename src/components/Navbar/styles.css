@@ -6,7 +6,7 @@
     min-height: 75px;
     max-height: 90px;
     position: relative;
-    box-shadow: 0px 5px 25px #FFCD8F;
+    box-shadow: 0px 3px 20px #FFCD8F;
 }
 .navbar a{
     color: var(--black);
@@ -38,6 +38,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: font-size 0.3s;
+}
+.navbar-menu_active{
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 .hamburguer-menu_view{
     display: none;

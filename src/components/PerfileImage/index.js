@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import "./styles.css"
+import images from "../../assets/images"
 
-function PerfileImage( { img } ) {
+
+function PerfileImage( { img = images.DefaultPerfile } ) {
     return (
         <span
             className="perfile-image"
